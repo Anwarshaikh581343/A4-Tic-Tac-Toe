@@ -1,0 +1,54 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.0.0"
+  }
+}
+File 2 — Name it index.html, paste this:
+html<!DOCTYPE html>
+<html>
+  <head><title>Tic Tac Toe</title></head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+File 3 — Name it src/main.jsx, paste this:
+jsximport React from "react"
+import ReactDOM from "react-dom/client"
+import App from "./App"
+ReactDOM.createRoot(document.getElementById("root")).render(<App />)
+After adding all 3, Vercel will automatically redeploy and your game should appear! Want me to walk you through adding each file on GitHub?You said: yesyes4:34 PMClaude responded: Let's do it one file at a time!Let's do it one file at a time!
+First file — package.json:
+
+Go to your GitHub repo tab (you have it open already)
+Click "Add file" → "Create new file"
+In the name box type: package.json
+Paste this in the big box below:
+
+json{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.0.0"
+  }
+}
